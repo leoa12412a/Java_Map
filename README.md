@@ -21,3 +21,7 @@ If a thread-safe implementation is not needed, it is recommended to use HashMap 
 If a thread-safe highly-concurrent implementation is desired, then it is recommended to use 
 java.util.concurrent.ConcurrentHashMapin place of Hashtable.
 ```
+```
+如果不需要線程安全實現，建議使用HashMap代替Hashtable。如果需要線程安全的高度並發實現，
+則建議使用java.util.concurrent.ConcurrentHashMap代替Hashtable。
+```
