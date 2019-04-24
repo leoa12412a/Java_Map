@@ -8,7 +8,7 @@ Map提供了一個更通用的元素存儲方法.Map集合類用於存儲元素�
 * LinkedHashMap
 * TreeMap
 * Hashtable
-
+![image](https://github.com/leoa12412a/Java_Map/blob/master/map.PNG)</br></br>
 ## HashMap
 
 HashMap最常用的Map，它根據鍵的HashCode值存儲數據，根據鍵可以直接獲取它的值，具有很快的訪問速度。
