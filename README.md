@@ -127,6 +127,65 @@ key = null, value = null
 {}
 ```
 ## TreeMap
+
+TreeMap所插入的
+```
+package Map;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+
+public class example {
+    public static void main(String[] args) {
+        TreeMap();
+    }
+
+    public static void TreeMap() {
+    
+        TreeMap map = new TreeMap();    //new一個名為map的TreeMap
+
+        map.put(1,"value1");   //插入元素插入鍵(Key)和值(Value)
+        map.put(2,"value1");
+        map.put(5,"value1");
+        map.put(4,"value1");
+        map.put(6,"value1");
+        map.put(23,"value1");
+        map.put(54,"value1");
+        map.put(8,"value1");
+        map.put(17,"value1");
+
+
+
+        System.out.println(map);  // 輸出整個HashMap
+
+        map.remove(23);   // 移除key=key7的key&value
+
+        map.forEach((k, v) -> System.out.println("key = " + k + ", value = " + v));  // 輸出Key內所有key和value
+
+        map.clear();  // 清除
+
+        System.out.println(map);
+    }
+
+}
+ ```
+ 產生結果:
+ 
+ ```
+{1=value1, 2=value1, 4=value1, 5=value1, 6=value1, 8=value1, 17=value1, 23=value1, 54=value1}
+key = 1, value = value1
+key = 2, value = value1
+key = 4, value = value1
+key = 5, value = value1
+key = 6, value = value1
+key = 8, value = value1
+key = 17, value = value1
+key = 54, value = value1
+{}
+ ```
+        
 ## Hashtable
 HashTable已經被淘汰了，所暫不討論
 
