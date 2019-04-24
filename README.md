@@ -18,6 +18,6 @@ HashTable已經被淘汰了，所暫不討論
 以下是根據HashTable類的說明
 ```
 If a thread-safe implementation is not needed, it is recommended to use HashMap in place of Hashtable.
-If a thread-safe highly-concurrent implementation is desired, then it is recommended to use java.util.concurrent.ConcurrentHashMap
-in place of Hashtable.
+If a thread-safe highly-concurrent implementation is desired, then it is recommended to use 
+java.util.concurrent.ConcurrentHashMapin place of Hashtable.
 ```
