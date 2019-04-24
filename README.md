@@ -69,8 +69,63 @@ key = key9, value = value1
 key = key8, value = value1
 {}
 ```
+## LinkedHashMap    
 
-## LinkedHashMap
+LinkedHashMap保持插入順序，且最多只允許一條記錄的鍵為Null（多條會覆蓋）;允許多條記錄的值為Null。非同步的。
+```
+package Map;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+
+public class example {
+    public static void main(String[] args) {
+        Hashmap();
+    }
+
+    public static void LinkedHashMap() {
+    
+        Map map = new LinkedHashMap();    //new一個名為map的LinkedHashMap
+        
+        map.put("key9","value1");   //插入元素插入鍵(Key)和值(Value)
+        map.put("key1","value1");  
+        map.put("key3","value1");
+        map.put("key5","value1");
+        map.put("key4","value1");
+        map.put("key6","value1");
+        map.put("key7","value1");
+        map.put("key2","value1");
+        map.put("key8","value1");
+        
+        System.out.println(map);  // 輸出整個HashMap
+        
+        map.remove("key7");   // 移除key=key7的key&value
+        
+        map.forEach((k, v) -> System.out.println("key = " + k + ", value = " + v));  // 輸出Key內所有key和value
+        
+        map.clear();  // 清除
+        
+        System.out.println(map);
+    }
+
+}
+```
+產生結果
+```
+{key9=value1, key1=value1, key3=value1, key5=value1, key4=value1, key6=value1, key7=value1, key2=value1, key8=value1, null=null}
+key = key9, value = value1
+key = key1, value = value1
+key = key3, value = value1
+key = key5, value = value1
+key = key4, value = value1
+key = key6, value = value1
+key = key2, value = value1
+key = key8, value = value1
+key = null, value = null
+{}
+```
 ## TreeMap
 ## Hashtable
 HashTable已經被淘汰了，所暫不討論
